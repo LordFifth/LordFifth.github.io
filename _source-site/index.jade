@@ -1,0 +1,128 @@
+.dumb-mobile-wrappper
+  section.header
+    .splash-lockup
+      .title-lockup
+        h1 Matthew Swartz White
+        h4 Front End Developer
+      .splash-img
+    .bio.card
+      .top About Me...
+      .profile
+      .center
+        .clear-shape
+        | <strong>I got my start with programming on a graphing calculator,</strong> one day the teacher handed out a printout with a simple quadratic program on it. You would punch in your a b and x, and it would spit out the two answers. That is though, unless the answers were imaginary. Past me wasn't satisfied with that limitation and some 7 years later I'm a fully certified front end developer with a pretty rad quadratic program stashed away somewhere.
+      .link-icons
+        span.find-me Find Me: 
+        for item in [["","#"],["","#"],["","#"],["","#"]]
+          a(href=item[1])
+            .icon-buttons
+              i(aria-hidden="true").icon= item[0]        
+  
+    .color-block
+    .seperator
+    .color-block
+  section.lockup
+    .skills
+      .top Skills
+      .body
+        .skill-bar-lockup
+          .skill Critical Thinking:
+            .bar
+              .skill-1
+          .skill Creativity:
+            .bar
+              .skill-2
+          .skill Learning:
+            .bar
+              .skill-3
+          .skill Communication:
+            .bar
+              .skill-4
+        .known-formats
+          a(href="https://www.wikiwand.com/en/HTML5").tooltips
+            img(src="/imgs/html5-logo-white.svg")
+            span HTML5
+          a(href="https://github.com/pugjs/pug").tooltips
+            img(src="/imgs/jade-logo.svg")
+            span Jade
+          a(href="https://www.wikiwand.com/en/Cascading_Style_Sheets").tooltips
+            img(src="/imgs/css3-1.svg")
+            span CSS3
+          a(href="https://www.wikiwand.com/en/Sass_(stylesheet_language)").tooltips
+            img(src="/imgs/sass-logo.svg")
+            span Sass
+          a(href="https://www.wikiwand.com/en/JavaScript").tooltips
+            img(src="/imgs/javascript-icon.svg")
+            span.ex-wide Javascript
+          a(href="https://www.wikiwand.com/en/JQuery").tooltips
+            img(src="/imgs/jquery.svg")
+            span Jquery
+          a(href="https://www.wikiwand.com/en/Lua_(programming_language)").tooltips
+            img(src="/imgs/Lua_logo.svg")
+            span Lua
+    .projects
+      .top Projects
+      .body
+        .simon-lockup
+          a(href="http://codepen.io/LordFifth/pen/rMXxWW")
+            .img-hover
+              img(src="/imgs/simon2.svg")
+              img(src="/imgs/overlay.svg")
+          h3 Simon Game
+          | A memory game based on the classic Simon toy, the objective is to correctly repeat the sequence until it reaches 20 notes long.
+        .calculator-lockup
+          a(href="http://codepen.io/LordFifth/pen/GjYzwR")
+            .img-hover
+              img(src="/imgs/calc2.svg")
+              img(src="/imgs/overlay.svg")
+          h3 Calculator
+          | A working standard calculator that can show not only the result of a calculation but also the numbers that were punched in. The design is loosely based around window's metro ui.
+        .wikipedia-lockup
+          a(href="http://codepen.io/LordFifth/pen/Kgxwbg")
+            .img-hover
+              img(src="/imgs/search2.svg")
+              img(src="/imgs/overlay.svg")
+          h3 Wikipedia Searcher
+          | A small bar that searches Wikipedia using its api and displays the results in a bootstrap styled list.
+        .ttt-lockup
+          a(href="http://codepen.io/LordFifth/pen/pEGyRz")
+            .img-hover
+              img(src="/imgs/tictak.svg")
+              img(src="/imgs/overlay.svg")
+          h3 Tic Tac Toe
+          | A fully functional tic tac toe game vs an ai.
+  .color-block
+  section.contact
+    .card
+      .decoritve-top
+        .top Contact Me
+          .background.trigger-send
+          i(aria-hidden="true").icon.send.trigger-send 
+          span.send.trigger-send Send
+        .stub
+      .form
+        .send-two
+          input(type="text" autocomplete="name" id="name" placeholder="John Smith")
+          input(type="text" autocomplete="email" id="email" autocorrect ="off" placeholder="yourEmail@email.com")
+          input(type="text" placeholder="Subject" id="subject")
+          input(type="text" id="gotcha" style="display:none")
+        .content
+          textarea#message
+  footer
+    .copyright-lockup
+      span.name Matthew Swartz White 
+      span.copyright © 2016
+    .col
+      .list-head Contact
+      li 203.912.0621
+      li matthewzwartswhite@gmail.com
+    .col
+      .list-head Find Me
+      li
+        a(href="https://www.linkedin.com/in/matthew-white-56ab1b131") Linked In
+      li
+        a(href="https://github.com/LordFifth") Github
+      li
+        a(href="http://codepen.io/LordFifth/") Codepen
+      li
+        a(href="https://www.freecodecamp.com/lordfifth") Free Code Camp

@@ -1,0 +1,90 @@
+$lightgray: #D5D5D5
+$grullo: #A79678
+$darkcerulean: #0F4672
+$yankeesblue: #0F293D
+$onyx: #333B42
+$gunmetal: #2B3035
+$porcelain: #ECF0F1
+$eerieblack: #181B1D
+$playfullyellow: rgb(243, 229, 84)
+$playfullgreen: rgb(88, 198, 56)
+$playfullblue: rgb(56, 92, 198)
+$playfullred: rgb(185, 44, 44)
+
+
+
+@font-face
+  font-family: "bebas nue"
+  src: url(/BebasNeueBold.otf)
+@font-face
+  font-family: "icomoon"
+  src: url(/icomoon.ttf)
+
+body
+  margin: 0
+  background-color: #383838
+  color: $gunmetal
+  font-family: "source sans pro"
+  letter-spacing: 0.01em
+  width: 100vw
+  height: 100vh
+  overflow: hidden
+i.icon
+  font:
+    family: "icomoon"
+    style: normal
+  text-decoration: none
+.dumb-mobile-wrappper
+  overflow-x: hidden
+  overflow-y: auto
+  height: 100vh
+  width: 100vw
+  -webkit-perspective: 100px
+  -moz-perspective: 100px
+  perspective: 100px
+  -moz-transform: perspective(100px)
+  -moz-transform-style: preserve-3d
+.card
+  max-width: 700px
+  background-color: $onyx
+  margin: 0 auto
+  border-radius: 1px
+  @media (max-width: 760px)
+    max-width: 96vw
+.top
+  border-radius: 1px
+  background-color: $gunmetal
+  font:
+    family: "bebas Nue"
+    weight: 600
+    size: 40px
+  padding: 0.4em 0 0.3em 0.5em
+  letter-spacing: 0.05em
+  color: $lightgray
+  text-transform: uppercase
+  position: relative
+  z-index: 5
+  @media (max-width: 480px)
+    font-size: 30px
+.color-block
+  background-color: #0B1E2D
+  height: 90px
+.in-view
+  animation:
+    name: drop-in
+    fill-mode: forwards
+    duration: 450ms
+.out-view
+  opacity: 0
+@import _header.sass
+@import _skills-projects.sass
+@import _contact.sass
+@import _footer.sass
+
+@keyframes drop-in
+  0%
+    transform:  translateZ(50px) translateY(25vh)
+    opacity: 0
+  100%
+    transform: translateY(0) translateZ(0)
+    opacity: 1

@@ -1,0 +1,104 @@
+.contact
+  background: url(/imgs/contact.jpg)
+  background-attachment: fixed
+  background-position: center
+  background-size: cover
+  padding-top: calc(50vh - 295px)
+  padding-bottom: calc(50vh - 295px)
+  min-height: calc(100vh - (100vh - 590px))
+  width: 100vw
+  margin: 0
+  -moz-transform-style: preserve-3d
+  @media (max-width: 500px)
+    padding-top: calc(50vh - 245px)
+    padding-bottom: calc(50vh - 245px)
+    min-height: calc(100vh - (100vh - 490px))
+  .top
+    width: 99.99%
+    left: -10px
+    box-shadow: 0 2px 4px -2px $gunmetal
+    position: relative
+    .send
+      float: right
+      margin-right: 10px
+      z-index: 10
+      &.icon
+        margin-right: 20px
+    .background
+      position: absolute
+      background-color: $darkcerulean
+      box-shadow: inset 0 0 8px -2px rgba(black,0.5)
+      right: 0
+      top: 0
+      height: 100%
+      width: 4.4em
+      z-index: -5
+  .card
+    padding: 10px
+    padding-top: 0
+    @media (max-width: 760px)
+      max-width: 90vw
+.trigger-send
+  cursor: pointer
+.stub
+  height: 20px
+  background-color: $porcelain
+  border-bottom: dashed 1px $onyx
+.form
+  background-color: $porcelain
+  padding: 20px
+  position: relative
+  z-index: 1000
+input:-webkit-autofill
+  -webkit-box-shadow: 0 0 0px 1000px $porcelain inset
+.send-two input
+  width: 97.5%
+  padding: 0.4em
+  line-height: 0.6em
+  font-size: 20px
+  margin-bottom: 8px
+  border: 0
+  background-color: $porcelain
+  border-bottom: 3px solid $darkcerulean
+  border-radius: 1px
+  &:focus
+    outline: none
+.content
+  margin-top: 35px
+  textarea
+    background-color: $porcelain
+    box-shadow: inset 0 0 5px -1px $onyx
+    outline: none
+    border: 0
+    border-bottom: 3px solid $darkcerulean
+    height: 240px
+    resize: vertical
+    width: 97.75%
+    font-size: 16px
+    padding: 0.4em
+    font-family: "sourse sans pro"
+    letter-spacing: 0.005em
+    @media (max-width: 500px)
+      height: 140px
+.animate-send
+  animation-name: send
+  animation-duration: 2s
+@keyframes send
+  0%
+    transform-origin: top left
+    transform: translateY(0)
+  7%
+    transform: translateY(50px)
+  10%
+    opacity: 1
+  60%
+    transform: translateY(-800px)
+    opacity: 0
+  82%
+    transform: translateY(30px)
+  85%
+    transform: translateY(30px)
+    opacity: 0
+  100%
+    transform: translateY(0)
+    opacity: 1

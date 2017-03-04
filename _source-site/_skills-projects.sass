@@ -1,0 +1,199 @@
+.lockup
+  background-color: $lightgray
+  text-align: center
+  position: relative
+  padding-top: 2vmin
+  -moz-transform-style: preserve-3d
+  -webkit-transform-style: preserve-3d
+  & > div
+    background-color: $porcelain
+    width: calc(100% - 4vmin)
+    margin-right: 2vmin
+    margin-left: 2vmin
+    display: inline-block
+    text-align: left
+    height: auto
+    vertical-align: top
+    position: relative
+    margin-bottom: 2vmin
+    @media (min-width: 1050px)
+      width: calc(50% - 3vmin)
+      &:first-of-type
+        margin-right: 1vmin
+        margin-bottom: 0
+      &:last-of-type
+        margin-left: 1vmin
+.body
+  padding: 20px
+
+.skill-bar-lockup
+  margin-top: 5px
+.skill
+  width: calc(50% - 30px)
+  float: left
+  font-weight: bold
+  font-size: 18px
+  margin: 6px 0
+  padding: 10px
+  white-space: nowrap
+  letter-spacing: 0.025em
+  border-radius: 2px
+  transition: background-color 300ms ease
+  &:nth-child(even)
+    margin-left: 15px
+  &:hover
+    background-color: $lightgray
+    .bar
+      background-color: $porcelain
+  @media (max-width: 460px)
+    font-size: 14px
+    width: calc(50% - 13px)
+    padding: 5px
+    &:nth-child(even)
+      margin-left: 5px
+.bar
+  border-radius: 2px
+  height: 40px
+  width: 100%
+  background-color: $lightgray
+  transition: background-color 300ms ease
+  div
+    border-radius: 1px
+    height: 100%
+    width: 0%
+    background-color: $darkcerulean
+  .skill-1
+    width: 90%
+    background-color: $playfullyellow
+  .skill-2
+    width: 40%
+    background-color: $playfullgreen
+  .skill-3
+    width: 80%
+    background-color: $playfullblue
+  .skill-4
+    width: 70%
+    background-color: $playfullred
+.skills-expand, .known-formats
+  background-color: $lightgray
+  padding: 1em
+  clear: right
+  margin-top: 10px
+  float: left
+  color: $eerieblack
+  border-radius: 2px
+  width: calc(100% - 33px)
+  .skill-1
+    //margin-top: 10px
+.known-formats
+  margin: 20px 0
+  @media (max-width: 650px)
+    text-align: center
+  @media (min-width: 1050px) and (max-width: 1270px)
+    text-align: center
+  img
+    height: 65px
+    width: 65px
+    margin-right: 10px
+    margin-top: 5px
+  a
+    &.tooltips
+      position: relative
+      display: inline
+      span
+        position: absolute
+        width: 70px
+        color: #FFFFFF
+        background: #2B3035
+        height: 30px
+        line-height: 30px
+        text-align: center
+        visibility: hidden
+        border-radius: 4px
+        &.ex-wide
+          width: 90px
+        &:after
+          content: ''
+          position: absolute
+          bottom: 100%
+          left: 50%
+          margin-left: -8px
+          width: 0
+          height: 0
+          border-bottom: 8px solid #2B3035
+          border-right: 8px solid transparent
+          border-left: 8px solid transparent
+    &:hover.tooltips span
+      visibility: visible
+      opacity: 0.8
+      top: 30px
+      left: 50%
+      margin-left: -39px
+      z-index: 999
+      &.ex-wide
+        margin-left: -49px
+  .blurb
+    clear: left
+    margin-top: 10px
+    text-align: left
+.projects
+  @media (min-width: 1050px)
+    animation-delay: 150ms
+  .body > div
+      width: 47%
+      min-width: calc(200px + 2%)
+      float: left
+      margin-bottom: 2%
+      padding: 1%
+      &:nth-of-type(odd)
+        margin-right: 2%
+        @media (max-width: 530px)
+          margin-right: 0
+      @media (max-width: 530px)
+        width: 98%
+  .img-hover
+    padding: 0
+    width: 100%
+    height: 200px
+    overflow-y: hidden
+    white-space: nowrap
+    position: relative
+    -ms-overflow-style: none
+    &:hover > img:nth-child(2)
+      transform: translateY(0) translateX(-200px)
+      background-color: rgba( $gunmetal , 0.4)
+      @media (max-width: 530px)
+        transform: translateY(0) translateX(0)
+  img
+    transition: transform 350ms, background-color 350ms ease
+    color: $porcelain
+    margin: 0
+    height: 200px
+    width: 200px
+    border-radius: 2px
+    @media (max-width: 530px)
+      margin-left: calc(50% - 100px)
+      &:nth-of-type(2)
+        right: 0
+        left: 0
+        margin: 0 auto
+        transform: translateY(200px) translateX(0)
+    &:nth-of-type(2)
+      position: absolute
+      transform: translateY(200px) translateX(-200px)
+      background-color: rgba( $gunmetal , 0.05)
+      @media (max-width: 530px)
+        transform: translateY(200px) translateX(0)
+
+.simon-lockup
+  img
+    background-color: $playfullyellow
+.calculator-lockup
+  img
+    background-color: $playfullgreen
+.wikipedia-lockup
+  img
+    background-color: $playfullblue
+.ttt-lockup
+  img
+    background-color: $playfullred
